@@ -1,3 +1,5 @@
+@use "global" as *;
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,46 +8,32 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #23252c;
+  background-color: $bodyBackgroundColor;
 }
 
 .EmailButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.56rem 0.81rem 0.56rem 0.68rem;
-  width: 7.18rem;
-  background: #ffffff;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  background-color: #ffffff;
-  color: #161619;
+  @include EmailButton;
+  background-color: $ComplementaryColor;
+  color: $SocialIconsBackground;
   cursor: pointer;
-}
-.EmailButton img {
-  padding-right: 0.5rem;
-}
 
+  img {
+    padding-right: 0.5rem;
+  }
+}
 .EmailButton:hover {
   filter: brightness(50%);
 }
 
 .LinkedinButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.56rem 0.81rem 0.56rem 0.68rem;
-  width: 7.18rem;
-  background: #5093e2;
-  border: none;
-  border-radius: 6px;
-  color: #ffffff;
+  @include LinkedinButton;
+  color: $ComplementaryColor;
   cursor: pointer;
-}
-.LinkedinButton img {
-  padding-right: 0.5rem;
-}
 
+  img {
+    padding-right: 0.5rem;
+  }
+}
 .LinkedinButton:hover {
   filter: brightness(50%);
 }
@@ -54,7 +42,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #161619;
+  background: $SocialIconsBackground;
   border-radius: 0px 0px 10px 10px;
   padding: 0 3.5rem;
   width: 19.81rem;
@@ -62,11 +50,14 @@ body {
 }
 
 .Card_Image {
-  width: 19.81rem;
-  border-radius: 0.62rem 0.62rem 0 0;
+  @include CardImage;
 }
 
 .card_wrap {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
   margin-top: 2.5rem;
   display: grid;
   grid-column: auto;
@@ -79,7 +70,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 19.81rem;
-  background-color: #1a1b21;
+  background-color: $CardBackgroundColor;
   padding: 1.5rem 2rem;
 }
 
@@ -92,63 +83,63 @@ body {
 }
 
 .Card_Owner_Name {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 1.56rem;
+  color: $ComplementaryColor;
+  font-weight: $HeavyWeight;
+  font-size: $HeavyFontSize;
   padding-bottom: 0.3rem;
   text-align: center;
 }
 
 .Card_Owner_Career {
-  color: #f3bf99;
-  font-weight: 400;
-  font-size: 0.8rem;
+  color: $AccentColor;
+  font-weight: $LightWeight;
+  font-size: $LightSize;
   padding-bottom: 0.2rem;
   text-align: center;
 }
 
 .Card_Owner_Website {
-  font-weight: 400;
-  font-size: 0.64rem;
-  line-height: 150%;
+  font-weight: $LightWeight;
+  font-size: $TextFontSize;
+  line-height: $TextLineHeight;
   text-align: center;
-  color: #f5f5f5;
+  color: $MainContentHeaderTextColor;
   text-decoration: none;
   padding-bottom: 0.5rem;
 }
 
 .About_Card_Owner {
-  font-weight: 1.56rem;
-  font-size: 1rem;
-  line-height: 150%;
-  color: #f5f5f5;
+  font-weight: $HeavyFontSize;
+  font-size: $MainContentHeadingFontSize;
+  line-height: $TextLineHeight;
+  color: $MainContentHeaderTextColor;
   text-align: start;
   padding-bottom: 0.4rem;
 }
 
 .About_Card_Owner_Details {
-  font-weight: 0.64rem;
-  font-size: 0.64rem;
-  line-height: 150%;
-  color: #dcdcdc;
+  font-weight: $TextFontSize;
+  font-size: $TextFontSize;
+  line-height: $TextLineHeight;
+  color: $BodyTextColor;
   text-align: start;
   padding-bottom: 0.7rem;
 }
 
 .Interests_Card_Owner {
-  font-weight: 1.56rem;
-  font-size: 1rem;
-  line-height: 150%;
-  color: #f5f5f5;
+  font-weight: $HeavyFontSize;
+  font-size: $MainContentHeadingFontSize;
+  line-height: $TextLineHeight;
+  color: $MainContentHeaderTextColor;
   text-align: start;
   padding-bottom: 0.4rem;
 }
 
 .Interests_Card_Owner_Details {
-  font-weight: 0.64rem;
-  font-size: 0.64rem;
-  line-height: 150%;
-  color: #dcdcdc;
+  font-weight: $TextFontSize;
+  font-size: $TextFontSize;
+  line-height: $TextLineHeight;
+  color: $BodyTextColor;
   text-align: start;
   padding-bottom: 0.8rem;
 }
@@ -161,29 +152,23 @@ body {
     justify-content: center;
     margin: 5rem;
   }
-
   .main_content {
     display: flex;
     flex-direction: column;
     width: 30rem;
     border-radius: 0px 10px 0px 0px;
   }
-
   .socialIcons {
     width: 30rem;
   }
-
   .Card_Image {
     width: 26.5rem;
     border-radius: 10px 0px 0px 10px;
   }
-
   .Card_Owner_Website {
     padding-bottom: 1.5rem;
   }
-
   .socialIcons {
     border-radius: 0px 0px 10px 0px;
   }
 }
-/*# sourceMappingURL=index.css.map */

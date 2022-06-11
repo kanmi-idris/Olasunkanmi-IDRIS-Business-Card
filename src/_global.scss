@@ -1,0 +1,52 @@
+$HeavyWeight: 700;
+$HeavyFontSize: 1.56rem;
+$HeavyLineHeight: 1.87rem;
+$ComplementaryColor: #ffffff;
+$MediumWeight: 500;
+$MediumSize: 0.87rem;
+$MediumLineHeight: 1rem;
+$AccentColor: #f3bf99;
+$LightWeight: 400;
+$LightSize: 0.8rem;
+$LightLineHeight: 15px;
+
+$TextFontSize: 0.64rem;
+$TextLineHeight: 150%;
+$BodyTextColor: #dcdcdc;
+$MainContentHeaderTextColor: #f5f5f5;
+
+$CardBackgroundColor: #1a1b21;
+$bodyBackgroundColor: #23252c;
+$SocialIconsBackground: #161619;
+$MainContentHeadingFontSize: 1rem;
+
+@mixin EmailButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.56rem 0.81rem 0.56rem 0.68rem;
+  width: 7.18rem;
+  //   height: 34px;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+@mixin LinkedinButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.56rem 0.81rem 0.56rem 0.68rem;
+  width: 7.18rem;
+  //   height: 34px;
+  background: #5093e2;
+  border: none;
+  // box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+@mixin CardImage {
+  width: 19.81rem;
+  border-radius: 0.62rem 0.62rem 0 0;
+}
