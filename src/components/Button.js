@@ -7,7 +7,9 @@ export function EmailButton() {
   return (
     <div>
       <button className="EmailButton">
-        <img src={EmailIcon} alt="Email icon" />
+        <a href="mailto:olasunkanmiidris15@gmail.com">
+          <img src={EmailIcon} alt="Email icon" />
+        </a>
         Email
       </button>
     </div>
@@ -18,7 +20,9 @@ export function LinkedinButton() {
   return (
     <div>
       <button className="LinkedinButton">
-        <img src={LinkedinIcon} alt="Linkedin icon" />
+        <a href="https://www.linkedin.com/in/olaidris/">
+          <img src={LinkedinIcon} alt="Linkedin icon" />
+        </a>
         LinkedIn
       </button>
     </div>

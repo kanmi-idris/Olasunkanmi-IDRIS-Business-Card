@@ -49,6 +49,10 @@ body {
   height: 4rem;
 }
 
+.socialIcons img:hover {
+  filter: brightness(200%);
+}
+
 .Card_Image {
   @include CardImage;
 }
@@ -126,6 +130,14 @@ body {
   padding-bottom: 0.7rem;
 }
 
+.About_Card_Owner_Details a {
+  color: $AccentColor;
+  text-decoration: none;
+  padding: 0 0.2rem;
+}
+.About_Card_Owner_Details a:hover {
+  font-weight: $HeavyWeight;
+}
 .Interests_Card_Owner {
   font-weight: $HeavyFontSize;
   font-size: $MainContentHeadingFontSize;

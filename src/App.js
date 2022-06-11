@@ -13,7 +13,7 @@ export default function App() {
           <h1 className="Card_Owner_Name">Olasunkanmi Idris</h1>
           <h3 className="Card_Owner_Career">FullStack Developer</h3>
           <a className="Card_Owner_Website" href="#">
-            OlasunkanmiIDRIS.Website
+            Portfolio website
           </a>
           <div className="buttons">
             <EmailButton />
@@ -22,15 +22,18 @@ export default function App() {
           <div className="Card_Owner_About_and_Interests_Wrap">
             <h3 className="About_Card_Owner">About</h3>
             <p className="About_Card_Owner_Details">
-              I am a frontend developer with a particular interest in making
-              things simple and automating daily tasks. I try to keep up with
-              security and best practices, and am always looking for new things
-              to learn.
+              I have a keen passion for responsive, durable software,
+              mobile-first approach and seamless user experience. By using
+              several tools to develop quality software I have completed several
+              <a href="https://github.com/kanmi-idris?tab=repositories">
+                projects
+              </a>
+              and i'm currently seeking to leverage my skills and gain
+              experience whilst contributing to overall organizational growth.
             </p>
             <h3 className="Interests_Card_Owner">Interests</h3>
             <p className="Interests_Card_Owner_Details">
-              Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
-              Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
+              Food Lover. Movies Geek. Programming.
             </p>
           </div>
         </div>

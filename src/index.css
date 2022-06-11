@@ -61,6 +61,10 @@ body {
   height: 4rem;
 }
 
+.socialIcons img:hover {
+  filter: brightness(200%);
+}
+
 .Card_Image {
   width: 19.81rem;
   border-radius: 0.62rem 0.62rem 0 0;
@@ -133,6 +137,16 @@ body {
   color: #dcdcdc;
   text-align: start;
   padding-bottom: 0.7rem;
+}
+
+.About_Card_Owner_Details a {
+  color: #f3bf99;
+  text-decoration: none;
+  padding: 0 0.2rem;
+}
+
+.About_Card_Owner_Details a:hover {
+  font-weight: 700;
 }
 
 .Interests_Card_Owner {
